@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coaches - View All</title>
+</head>
+    <body>
+        <h1>Coaches</h1>
+
+        <table border= "1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Years of Experience</th>
+                <th>Team ID</th>
+            </tr>
+            <% for (var i= 0; i < coaches.length; i++) { %>
+                <tr>
+                    <td><%= coaches[i].first_name %></td>
+                    <td><%= coaches[i].last_name %></td>
+                    <td><%= coaches[i].age%></td>
+                    <td><%= coaches[i].year_exp%></td>
+                    <td><%= coaches[i].team_id%></td>
+                 </tr>
+             <% } %>
+         </table>
+    </body>
+</html>
